@@ -1,0 +1,3 @@
+db.sqlite3
+.venv/
+DJANGO_SECRET_KEY=7b9w0!*w&352#3g5@
