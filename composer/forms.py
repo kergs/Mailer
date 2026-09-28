@@ -1,7 +1,7 @@
 from django import forms
 
 class EmailForm(forms.Form):
-    from_local_part = forms.CharField(label="From (local part)")
+    from_email = forms.EmailField(label="From")
     reply_to = forms.EmailField(label="Reply-To", required=False)
     to = forms.CharField(help_text="Comma-separated addresses")
     cc = forms.CharField(required=False)

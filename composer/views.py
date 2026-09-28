@@ -11,7 +11,7 @@ def send_email(request):
         form = EmailForm(request.POST, request.FILES)
         if form.is_valid():
             data = form.cleaned_data
-            from_email = f"{data['from_local_part']}@kergsdev.site"
+            from_email = data["from_email"]
             email = EmailMessage(
                 subject=data['subject'],
                 body=data['body'],
